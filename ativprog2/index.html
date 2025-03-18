@@ -5,7 +5,7 @@
     <title>Formulário</title>
 </head>
 <body>
-    <form action="send" method="post">
+    <form action="/ativprog2/forms/" method="post">
         <fieldset>
             <legend>Dados Pessoais</legend>
             
@@ -27,18 +27,16 @@
             <label for="dataNasci">Data de nascimento: *</label>
             <input type="date" id="dataNasci" name="dataNasci" >
             
-            <label for="sexo">Sexo: *</label>
-            <select id="sexo" name="sexo">
-                <option value="">Selecione</option>
-                <option value="masculino">Masculino</option>
-                <option value="feminino">Feminino</option>
+            <label for="sexo">Sexo: *</label> 
+            <select id="sexo" name="sexo"> <option value="">Selecione</option> 
+                <option value="masculino">Masculino</option> 
+                <option value="feminino">Feminino</option> 
             </select>
             
-            <label for="EstadoCiv">Estado civil: *</label>
-            <select id="estadoCiv" name="estadoCiv">
-                <option value="">Selecione</option>
-                <option value="solteiro">Solteiro(a)</option>
-                <option value="casado">Casado(a)</option>
+            <label for="EstadoCiv">Estado civil: *</label> 
+            <select id="estadoCiv" name="estadoCiv"> 
+                <option value="">Selecione</option> 
+                <option value="solteiro">Solteiro(a)</option> <option value="casado">Casado(a)</option> 
             </select>
 
             <input type="text" id="apenasLeitura" name="apenasLeitura" value=" Não é um robo" readonly>
@@ -46,12 +44,65 @@
             <label hidden for="oculto">Tem Sharingan: *</label>
             <input hidden type="text" id="oculto" name="oculto" value="Não">
 
-        <fieldset>
-            <legend>Endereço de Entrega</legend> 
         </fieldset>
         <fieldset>
-            <legend>Informações Adicionais</legend> 
+            <legend>Endereço de Entrega</legend>
+            
+            <label for="cep">CEP: *</label>
+            <input type="text" id="cep" name="cep" minlength="2" maxlength="50" required>
+            
+            <label for="rua">Tipo de logradouro: *</label>
+
+            <input type="radio" id="rua" name="log"required>
+            <label for="rua">Rua</label>
+
+            <input type="radio" id="avenida" name="log"required>
+            <label for="avenida">Avenida</label>
+
+            <input type="radio" id="praca" name="log"required>
+            <label for="praca">Praça</label>
+
+            <label for="logradouro">Logradouro: *</label>
+            <input type="text" id="logradouro" name="logradourov" minlength="2" maxlength="50" required>
+
+            <label for="bairro">Bairro: *</label>
+            <input type="text" id="bairro" name="bairro" minlength="2" maxlength="50" required>
+
+            <label for="cidade">Cidade: *</label>
+            <input type="text" id="cidade" name="cidade" minlength="2" maxlength="50" required>
+
+            <label for="estado">Estado: *</label>
+            <input type="text" id="estado" name="estadoestado" minlength="2" maxlength="50" required>
+            
         </fieldset>
+        <fieldset>
+            <legend>Informações Adicionais</legend>
+
+            <label for="interesses">Interesses: </label>
+
+            <input type="checkbox" id="filmes" name="interesse">
+            <label for="filmes">Filmes</label>
+
+            <input type="checkbox" id="informatica" name="interesse">
+            <label for="informatica">Informática</label> 
+
+            <input type="checkbox" id="games" name="interesse">
+            <label for="games">Games</label> 
+
+            <input type="checkbox" id="livro" name="interesse">
+            <label for="livro">Livros</label> 
+
+            <input type="checkbox" id="roupa" name="interesse">
+            <label for="roupa">Roupas</label> 
+
+            <label for="desc">Descrição: </label>
+            <textarea name="desc" id="desc"></textarea>
+
+            <label for="load">Carregar: </label>
+            <input type="file" id="load" name="load">
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <input type="reset" value="Limpar">
     </form>
     
 </body>
