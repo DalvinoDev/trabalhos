@@ -33,7 +33,7 @@
                 <option value="feminino">Feminino</option> 
             </select>
             
-            <label for="EstadoCiv">Estado civil: *</label> 
+            <label for="estadoCiv">Estado civil: *</label> 
             <select id="estadoCiv" name="estadoCiv"> 
                 <option value="">Selecione</option> 
                 <option value="solteiro">Solteiro(a)</option> <option value="casado">Casado(a)</option> 
@@ -53,13 +53,13 @@
             
             <label for="rua">Tipo de logradouro: *</label>
 
-            <input type="radio" id="rua" name="log"required>
+            <input type="radio" id="rua" name="log" required>
             <label for="rua">Rua</label>
 
-            <input type="radio" id="avenida" name="log"required>
+            <input type="radio" id="avenida" name="log" required>
             <label for="avenida">Avenida</label>
 
-            <input type="radio" id="praca" name="log"required>
+            <input type="radio" id="praca" name="log" required>
             <label for="praca">Praça</label>
 
             <label for="logradouro">Logradouro: *</label>
@@ -67,18 +67,47 @@
 
             <label for="bairro">Bairro: *</label>
             <input type="text" id="bairro" name="bairro" minlength="2" maxlength="50" required>
-
+            
             <label for="cidade">Cidade: *</label>
             <input type="text" id="cidade" name="cidade" minlength="2" maxlength="50" required>
-
+            
             <label for="estado">Estado: *</label>
-            <input type="text" id="estado" name="estadoestado" minlength="2" maxlength="50" required>
+            <select id="estado" name="estado" required>
+                <option value="">Selecione</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="PB">Paraíba</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
             
         </fieldset>
         <fieldset>
             <legend>Informações Adicionais</legend>
 
-            <label for="interesses">Interesses: </label>
+            <label >Interesses: </label>
 
             <input type="checkbox" id="filmes" name="interesse">
             <label for="filmes">Filmes</label>
