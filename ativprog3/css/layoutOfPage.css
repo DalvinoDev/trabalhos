@@ -1,15 +1,26 @@
 body {
-
+    background-color: #ddd;
+    color: #444;
+    font-family: "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+    width: 60%;
+    margin: 0 auto;
+    padding: 35px;
 }
 
 main {
-
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+    
 }
 
 section {
-
+    border-top: 1px solid #444;
 }
 
 h1, h2 {
-
+    margin-top: 10px;
+    color: rgb(140, 76, 8);
 }
