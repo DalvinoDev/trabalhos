@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <main class="container">
+            
+            <form action="/trabalhos/ativprog2/forms/cadastraCliente.php" method="post" >
+                <h1>Cadastro de Cliente</h1>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                
+                    <div class="input-group">
+                        <label for="nome">Nome: *</label>
+                        <input type="text" id="nome" name="nome" minlength="2" maxlength="50" autofocus required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="email">E-mail: *</label>
+                        <input type="email" id="email" name="email" minlength="2" maxlength="50" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="cpf">CPF: *</label>
+                        <input type="text" id="cpf" name="cpf" minlength="2" maxlength="50" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="idade">Idade: *</label>
+                        <input type="number" id="idade" name="idade" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="phone">Telefone: *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="dataNasci">Data de nascimento: *</label>
+                        <input type="date" id="dataNasci" name="dataNasci">
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="sexo">Sexo: *</label> 
+                        <select id="sexo" name="sexo">
+                            <option value="">Selecione</option> 
+                            <option value="masculino">Masculino</option> 
+                            <option value="feminino">Feminino</option> 
+                        </select>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="estadoCiv">Estado civil: *</label> 
+                        <select id="estadoCiv" name="estadoCiv">
+                            <option value="">Selecione</option> 
+                            <option value="solteiro">Solteiro(a)</option> 
+                            <option value="casado">Casado(a)</option> 
+                        </select>
+                    </div>
+                
+                    <div class="input-group">
+                        <input type="text" id="apenasLeitura" name="apenasLeitura" value="" readonly hidden>
+                    </div>
+                
+                    <div class="input-group" hidden>
+                        <label for="oculto">Tem Sharingan: *</label>
+                        <input type="text" id="oculto" name="oculto" value="Não">
+                    </div>
+                </fieldset>             
+                <fieldset>
+                    <legend>Endereço de Entrega</legend>
+                
+                    <div class="input-group">
+                        <label for="cep">CEP: *</label>
+                        <input type="text" id="cep" name="cep" minlength="2" maxlength="50" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label>Tipo de logradouro: *</label>
+                
+                        <input type="radio" id="rua" name="log" required>
+                        <label for="rua">Rua</label>
+                
+                        <input type="radio" id="avenida" name="log" required>
+                        <label for="avenida">Avenida</label>
+                
+                        <input type="radio" id="praca" name="log" required>
+                        <label for="praca">Praça</label>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="logradouro">Logradouro: *</label>
+                        <input type="text" id="logradouro" name="logradourov" minlength="2" maxlength="50" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="bairro">Bairro: *</label>
+                        <input type="text" id="bairro" name="bairro" minlength="2" maxlength="50" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="cidade">Cidade: *</label>
+                        <input type="text" id="cidade" name="cidade" minlength="2" maxlength="50" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="estado">Estado: *</label>
+                        <select id="estado" name="estado" required>
+                            <option value="">Selecione</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                </fieldset>               
+                <fieldset>
+                    <legend>Informações Adicionais</legend>
+                
+                    <div class="input-group">
+                        <label for="interesses">Interesses:</label>
+                        <select id="interesses" name="interesses" multiple>
+                            <option value="filmes">Filmes</option>
+                            <option value="informatica">Informática</option>
+                            <option value="games">Games</option>
+                            <option value="livros">Livros</option>
+                            <option value="roupas">Roupas</option>
+                        </select>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="desc">Descrição:</label>
+                        <textarea name="desc" id="desc"></textarea>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="load">Anexar arquivo:</label>
+                        <input type="file" id="load" name="load">
+                    </div>
+                </fieldset>               
+            <button type="submit">Enviar</button>
+            <input type="reset"  value="Limpar" hidden>
+        </form>
+    </main>
+</body>
+</html>
